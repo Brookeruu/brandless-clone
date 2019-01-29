@@ -1,11 +1,38 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand" id="top-nav-menu">
   <div class="container-fluid">
+  <ul class="navbar-nav" id="top-nav">
+    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
+            About dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Why Brandless</a>
+            <a class="dropdown-item" href="#">Brandless Blog</a>
+            <a class="dropdown-item" href="#">Stuff</a>
+            <a class="dropdown-item" href="#">Things</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="active">
+           <a class="nav-link navbar-right" href="#">Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="navbar-right">
+           <a class="nav-link" href="#">Link</a>
+         </li>
+  </ul>
+</div>
+</nav>
+
+<nav class="navbar navbar-expand" id="other-nav">
+  <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Brandless Clone</a>
+      <a id="nav-brand" routerLink="">BRANDLESS CLONE</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="about">About</a></li>
-      <li><a routerLink="marketplace">Marketplace</a></li>
+      <li class="nav-item nav-link"><a routerLink="">Food</a></li>
+      <li class="nav-item nav-link"><a routerLink="about">About</a></li>
+      <li class="nav-item nav-link"><a routerLink="marketplace">Marketplace</a></li>
     </ul>
   </div>
 </nav>

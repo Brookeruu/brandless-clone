@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { Item } from '../item.model';
 
 @Component({
   selector: 'app-item-detail',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemDetailComponent implements OnInit {
 
-  constructor() { }
+  itemId: number = null;
+
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.itemId = parseInt(urlParameters['id']);
+    })
   }
 
 }

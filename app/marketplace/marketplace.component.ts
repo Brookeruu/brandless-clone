@@ -20,10 +20,14 @@ export class MarketplaceComponent  {
              "Breakfast",
              3,
              2),
-    new Item("Almond Butter",
+    new Item("Hazelnut Spread",
              "Nuts & Seed Butters",
              3,
              3),
+    new Item("Hummus Crisps",
+            "Snacks",
+             3,
+             4),
   ];
 
   goToDetailPage(clickedItem: Item) {

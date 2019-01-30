@@ -9,6 +9,13 @@ export class ItemService {
 
   getItems() {
     return ITEMS;
-  }
+  }  
 
+    getItemById(itemId: number) {
+      for(let i = 0; i <= ITEMS.length -1; i++) {
+        if(ITEMS[i].id === itemId) {
+          return ITEMS[i];
+        }
+      }
+    }
 }

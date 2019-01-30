@@ -2,7 +2,7 @@
 
 
 <div>
-  <h3>{{itemToDisplay.title}}</h3>
-  <h4>{{itemToDisplay.artist}}</h4>
-  <p>{{itemToDisplay.description}}</p>
+  <h3>{{(itemToDisplay | async)?.title}}</h3>
+  <h4>{{(itemToDisplay | async)?.artist}}</h4>
+  <p>{{(itemToDisplay | async)?.description}}</p>
 </div>

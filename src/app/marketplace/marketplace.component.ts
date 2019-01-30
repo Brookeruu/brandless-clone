@@ -19,8 +19,8 @@ export class MarketplaceComponent implements OnInit {
     this.items = this.itemService.getItems();
   }
 
-  goToDetailPage(clickedItem: Item) {
-    this.router.navigate(['items', clickedItem.id])
+  goToDetailPage(clickedItem) {
+    this.router.navigate(['items', clickedItem.$key])
   };
 
 }

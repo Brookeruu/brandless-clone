@@ -1,0 +1,19 @@
+{ "items": [{
+     "title": "Granola",
+    "category": "Breakfast",
+     "price": "3",
+     "id": "5"
+  },
+  {
+       "title": "Chia Stuff",
+      "category": "Breakfast",
+       "price": "3",
+       "id": "6"
+    },
+    {
+         "title": "Choc Chip Cookies",
+        "category": "Snacks",
+         "price": "3",
+         "id": "7"
+      }]
+}

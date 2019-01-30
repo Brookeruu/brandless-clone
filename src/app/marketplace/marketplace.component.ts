@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Item } from '../item.model';
 import { Router } from '@angular/router';
 import { ItemService } from '../item.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-marketplace',
@@ -10,7 +11,7 @@ import { ItemService } from '../item.service';
   providers: [ItemService]
 })
 export class MarketplaceComponent implements OnInit {
-  items: Item[];
+  items: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private itemService: ItemService){}
 

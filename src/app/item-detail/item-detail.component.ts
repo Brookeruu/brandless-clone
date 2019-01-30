@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class ItemDetailComponent implements OnInit {
 
   itemId: string;
-  itemToDisplay;
+  itemToDisplay: Item;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,10 +23,13 @@ export class ItemDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.itemId = urlParameters['id'];
+    this.route.params.forEach((urlParametersArray) => {
+      this.itemId = urlParametersArray['id'];
     });
-    this.itemToDisplay = this.itemService.getItemById(this.itemId);
+    this.itemService.getItemById(this.itemId).subscribe(dataLastEmittedFromObserver => {
+      this.itemToDisplay = new Item(dataLastEmittedFromObserver.title, dataLastEmittedFromObserver.category, dataLastEmittedFromObserver.price)
+      console.log(this.itemToDisplay);
+  })
   }
 
 }

@@ -29,6 +29,11 @@ export class ItemService {
                                 category: localUpdatedItem.category});
   }
 
+  deleteItem(localItemToDelete){
+    var itemEntryInFirebase = this.getItemById(localItemToDelete.$key);
+    itemEntryInFirebase.remove();
+  }
+
 
 
 }

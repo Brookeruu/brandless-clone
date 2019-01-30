@@ -1,0 +1,11 @@
+<h5>Edit Item</h5>
+
+<label class="col-form-label-sm">New Item Title:</label>
+<input class="col-form-label-sm" [(ngModel)]="selectedItem.title">
+<br>
+
+<label class="col-form-label-sm">New Item Category:</label>
+<input class="col-form-label-sm" [(ngModel)]="selectedItem.category">
+<br>
+
+<button (click)="beginUpdatingAlbum(selectedAlbum)">Update</button>

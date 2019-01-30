@@ -4,6 +4,9 @@ import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 
 
 import { AppComponent } from './app.component';
@@ -12,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditItemComponent } from './edit-item/edit-item.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,11 +32,12 @@ export const firebaseConfig = {
     MarketplaceComponent,
     ItemDetailComponent,
     AdminComponent,
+    EditItemComponent,
   ],
   imports: [
     BrowserModule,
-    // FormsModule,
-    // HttpModule,
+    FormsModule,
+    HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule

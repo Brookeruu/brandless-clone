@@ -15,11 +15,20 @@ export class ItemService {
   getItems() {
     return this.items;
   }
-    addItem(newItem: Item) {
-      this.items.push(newItem);
-    }
+  addItem(newItem: Item) {
+    this.items.push(newItem);
+  }
 
-    getItemById(itemId: string) {
-return this.database.object('items/' + itemId);
-    }
+  getItemById(itemId: string) {
+    return this.database.object('items/' + itemId);
+  }
+
+  updateItem(localUpdatedItem){
+    var itemEntryInFirebase = this.getItemById(localUpdatedItem.$key);
+    itemEntryInFirebase.update({title: localUpdatedItem.title,
+                                category: localUpdatedItem.category});
+  }
+
+
+
 }

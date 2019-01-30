@@ -13,10 +13,13 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class MarketplaceComponent implements OnInit {
   items: FirebaseListObservable<any[]>;
 
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private itemService: ItemService){}
 
   ngOnInit() {
     this.items = this.itemService.getItems();
+
   }
 
   goToDetailPage(clickedItem) {

@@ -1,0 +1,21 @@
+<h2>Marketplace</h2>
+
+<div class="flex-row">
+  <div class="flex-xl-column">
+
+  </div>
+</div>
+
+<div class="grid-container">
+
+
+<div class="grid-item" *ngFor="let item of items" (click)="goToDetailPage(item)">
+  <div class="panel-body">
+    <img width="200" src="./assets/img/hazelnut.jpg" alt="hazelnut spread">
+    <h6> <em>{{item.title}}</em></h6>
+    <!-- <h5> <em>{{item.category}}</em></h5> -->
+    <h5 id="price"> <em>${{item.price}}</em></h5>
+    <button class="btn btn-outline-primary btn-block" type="button" name="button">Add</button>
+  </div>
+</div>
+</div>

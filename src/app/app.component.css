@@ -19,12 +19,21 @@
   border-radius: 10px;
   padding: 12px;
   color: black;
+  margin-left: 100px;
 }
 
  #other-nav, a {
   margin-top: 0px;
   color: #f2f2f2;
   font-size: 18px;
+}
+
+ul#top-nav {
+  margin-left: 100px;
+}
+
+ul#bottom-nav {
+  margin-right: 100px;
 }
 /*
 #header {

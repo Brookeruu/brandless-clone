@@ -1,23 +1,33 @@
-<h2>Marketplace</h2>
+<div class="top-space">
+  <p> </p>
+</div>
+<div class="container">
 
-<div class="grid-container">
-
-
-<div class="grid-item" *ngFor="let item of items | async">
-  <div class="panel-body">
-    <img (click)="goToDetailPage(item)" width="200" src="./assets/img/hazelnut.jpg" alt="hazelnut spread">
-    <h6> <em>{{item.title}}</em></h6>
-    <!-- <h5> <em>{{item.category}}</em></h5> -->
-    <h5 id="price"> <em>${{item.price}}</em></h5>
-    <button class="btn btn-outline-primary btn-block" type="button" name="button">Add to cart</button>
+  <img id="food-img" src="./assets/img/brandless-food-page.png" alt="food page" style="width: 100%">
 
 
+  <div class="container">
+
+    <h2>Marketplace</h2>
+
+    <div class="grid-container">
+
+
+      <div class="grid-item" *ngFor="let item of items | async">
+        <div class="panel-body">
+          <img (click)="goToDetailPage(item)" width="200" src="./assets/img/hazelnut.jpg" alt="hazelnut spread">
+          <h6> <em>{{item.title}}</em></h6>
+          <!-- <h5> <em>{{item.category}}</em></h5> -->
+          <h5 id="price"> <em>${{item.price}}</em></h5>
+          <button class="btn btn-outline-primary btn-block" type="button" name="button">Add to cart</button>
+        </div>
+
+        <div *ngIf="currentRoute === '/admin'">
+          {{item.category}}
+          <hr>
+          <app-edit-item [selectedItem]="item"></app-edit-item>
+        </div>
+      </div>
+    </div>
   </div>
-
-<div *ngIf="currentRoute === '/admin'">
-  {{item.category}}
-  <hr>
-  <app-edit-item [selectedItem]="item"></app-edit-item>
-</div>
-</div>
 </div>

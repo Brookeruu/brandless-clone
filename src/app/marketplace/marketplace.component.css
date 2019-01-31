@@ -1,3 +1,7 @@
+img#food-img {
+
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -20,3 +24,21 @@
   font-weight: bolder;
   font-style: normal;
 }
+
+  .top-space {
+    margin: 20px;
+  }
+
+
+
+  h2 {
+    border: 2px solid black;
+    border-radius: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+  }

@@ -3,7 +3,7 @@ img {
   margin-left: 0px;
   margin-bottom: -560px;
   margin-top: 0px;
-  position: fixed;
+  position: absolute;
 }
 
 h1 {

@@ -1,0 +1,14 @@
+image {
+  /* display: block;
+  position: fixed; */
+}
+
+.test  {
+  width: 100%;
+  height: 20vh;
+  background-image: url("https://brandless-production-static.imgix.net/assets/53f18e93a0b4812b6b9bb77ab32b1e67.jpg?auto=format,compress")
+}
+
+#content {
+  background-color: white;
+}

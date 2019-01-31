@@ -16,6 +16,7 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditItemComponent } from './edit-item/edit-item.component';
+import { BackgroundImageComponent } from './background-image/background-image.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,6 +34,7 @@ export const firebaseConfig = {
     ItemDetailComponent,
     AdminComponent,
     EditItemComponent,
+    BackgroundImageComponent,
   ],
   imports: [
     BrowserModule,

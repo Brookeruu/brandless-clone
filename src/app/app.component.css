@@ -1,6 +1,10 @@
-#top-nav {
+#top-nav-menu {
   background-color: grey;
   font-weight: lighter;
+  height: 30px;
+}
+
+#top-nav {
 }
 
 #other-nav {
@@ -18,6 +22,50 @@
   color: black;
 }
 
-#top-nav-menu, #other-nav, a {
+ #other-nav, a {
+  margin-top: 0px;
   color: #f2f2f2;
+}
+
+#header {
+  color: green;
+}
+
+#header-right {
+
+  position: absolute;
+  top: 5px;
+  right: 0px;
+
+}
+
+#header-left {
+  position: absolute;
+   top: 5px;
+  left: 20px;
+}
+
+#header a, li {
+
+  color: black;
+  font-size: 13px;
+  margin-right: 15px;
+  text-decoration: none;
+
+}
+
+#header a:hover {
+
+  text-decoration: underline;
+
+}
+
+#header img {
+  vertical-align: middle;
+}
+
+#header button {
+
+  transform: translateX(50px);
+
 }

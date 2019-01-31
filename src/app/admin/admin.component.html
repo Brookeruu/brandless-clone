@@ -1,28 +1,36 @@
-<div class="card card-default">
-  <div class="card-header">
-    <h3 class="card-title">Add New Album to Inventory</h3>
-  </div>
-  <div class="card-body">
-    <div class="card-text">
-      <label>Item Title:</label>
-      <br>
-      <input #newTitle>
-    </div>
+<div id="admin" class="container">
+  <div class="row">
+    <div class="col-4-md">
+    <div class="card card-default">
+      <div class="card-header">
+        <h4 class="card-title"><span id="admin-red">Admin View: </span><br>Add New Item to Inventory</h4>
+      </div>
+      <div class="card-body">
+        <div class="card-text">
+          <label>Item Title:</label>
+          <br>
+          <input #newTitle>
+        </div>
 
-    <div>
-      <label>Item Category:</label>
-      <br>
-      <input #newCategory>
-    </div>
-    <div>
-      <label>Item Price:</label>
-      <br>
-      <input #newPrice>
+        <div>
+          <label>Item Category:</label>
+          <br>
+          <input #newCategory>
+        </div>
+        <div>
+          <label>Item Price:</label>
+          <br>
+          <input #newPrice>
+        </div>
+      </div>
+      <button class="btn btn-outline-info"(click)="submitForm(newTitle.value, newCategory.value, newPrice.value); newTitle.value=''; newCategory.value=''; newPrice.value=''">Add New Item</button>
     </div>
   </div>
+  <div class="col-md">
+  <img class="img-fluid" src="https://brandless-1.imgix.net/content_placement_versions/images/000/000/079/original/Img_JWM_L2_Snacks.jpg?ixlib=rb-1.1.0&w=980&h=550&q=85&auto=format%2Ccompress&s=92e7877131054e8e0f7b15c67fc00f96" alt="">
 </div>
-<button class="btn btn-outline-info"(click)="submitForm(newTitle.value, newCategory.value, newPrice.value); newTitle.value=''; newCategory.value=''; newPrice.value=''">Add</button>
-
+</div>
+</div>
 <div class="">
   <app-marketplace></app-marketplace>
 

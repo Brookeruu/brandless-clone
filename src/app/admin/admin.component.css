@@ -1,3 +1,28 @@
+#admin-red {
+  color: red;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  margin-left: 0px;
+}
+
+button {
+  width: 150px;
+  margin: 20px;
+}
+
+#admin {
+  display: block;
+}
+
 img {
-  display: none;
+  height: 450px;
+  margin: 20px;
+  margin-left: 0px;
+  border-radius: 5px;
+  /* float: left; */
 }

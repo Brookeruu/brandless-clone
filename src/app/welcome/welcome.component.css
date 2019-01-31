@@ -23,3 +23,9 @@
   background-color: #fff;
   box-sizing: border-box;
 }
+
+img#spoon-image {
+  margin-top: 100px;
+  width: 100vw;
+  height: 400px;
+}

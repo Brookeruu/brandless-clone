@@ -1,3 +1,4 @@
+
 <h5>Edit Item</h5>
 
 <label class="col-form-label-sm">New Item Title:</label>
@@ -8,6 +9,6 @@
 <input class="col-form-label-sm" [(ngModel)]="selectedItem.category">
 <br>
 
-<button (click)="beginUpdatingItem(selectedItem)">Update</button>
+<button  class="btn btn-outline-warning" (click)="beginUpdatingItem(selectedItem)">Update</button>
 <hr>
-<button (click)="beginDeletingItem(selectedItem)">Delete</button>
+<button class="btn btn-outline-danger" (click)="beginDeletingItem(selectedItem)">Delete</button>

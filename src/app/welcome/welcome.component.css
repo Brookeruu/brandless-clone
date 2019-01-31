@@ -1,0 +1,18 @@
+.card {
+  margin-top: -281px;
+  margin-left: 30px;
+  border-radius: 15px;
+  border: none;
+  width: 460px;
+  height: 250px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+button {
+  width: 12.5rem;
+  height: 40px;
+}

@@ -1,8 +1,9 @@
 img {
   width: 100vw;
   margin-left: 0px;
-  margin-bottom: -400px;
+  margin-bottom: -560px;
   margin-top: 0px;
+  position: fixed;
 }
 
 h1 {
@@ -13,12 +14,12 @@ h1 {
 
 .card {
   padding: 100px;
+  margin: 9%;
   border-radius: 20px;
   border: white;
   text-align: center;
-  margin: 20px;
-  margin-top: 135px;
-  width: 75%;
+  /* margin: 20px; */
+  /* width: 70%; */
 }
 
 .card-text {

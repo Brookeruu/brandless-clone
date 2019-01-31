@@ -1,4 +1,4 @@
-img#food-img {
+img#food-splash-img {
   margin-bottom: 20px;
 }
 
@@ -29,8 +29,6 @@ img#food-img {
     margin: 20px;
   }
 
-
-
   h2 {
     border: 2px solid black;
     border-radius: 7px;
@@ -41,4 +39,11 @@ img#food-img {
     font-weight: bold;
     font-size: 32px;
     text-transform: uppercase;
+  }
+
+  img#food-item-img {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }

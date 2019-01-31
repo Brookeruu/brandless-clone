@@ -3,7 +3,7 @@
 </div>
 <div class="container">
 
-    <img *ngIf="router.url == '/marketplace'" id="food-img" src="./assets/img/brandless-food-page.png" alt="food page" style="width: 100%">
+    <img *ngIf="router.url == '/marketplace'" id="food-splash-img" src="./assets/img/brandless-food-page.png" alt="food page" style="width: 100%">
 
   <div class="container">
 
@@ -13,7 +13,7 @@
 
       <div class="grid-item" *ngFor="let item of items | async">
         <div class="panel-body">
-          <img (click)="goToDetailPage(item)" width="200" src="./assets/img/hazelnut.jpg" alt="hazelnut spread">
+          <img (click)="goToDetailPage(item)" id="food-item-img" width="200" src="./assets/img/hazelnut.jpg" alt="hazelnut spread">
           <h6> <em>{{item.title}}</em></h6>
           <!-- <h5> <em>{{item.category}}</em></h5> -->
           <h5 id="price"> <em>${{item.price}}</em></h5>

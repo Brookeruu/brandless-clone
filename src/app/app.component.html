@@ -1,73 +1,52 @@
 
 
-<div class="navbar navbar-expand" id="top-nav-menu">
+<div class="navbar navbar-expand" id="site-header-top-bar">
   <div class="container-fluid">
-  <ul class="nav navbar-nav" id="top-nav">
-    <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
-            About dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Why Brandless</a>
-            <a class="dropdown-item" href="#">Brandless Blog</a>
-            <a class="dropdown-item" href="#">Stuff</a>
-            <a class="dropdown-item" href="#">Things</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="active">
-           <a class="nav-link navbar-right" href="#">Home <span class="sr-only">(current)</span></a>
-         </li>
-         <li class="navbar-right">
-           <a class="nav-link" href="#">Link</a>
-         </li>
-  </ul>
+
+    <!-- top navbar : dropdown list : not working -->
+    <ul class="nav navbar-nav" id="top-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
+          About dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Why Brandless</a>
+          <a class="dropdown-item" href="#">Brandless Blog</a>
+          <a class="dropdown-item" href="#">Stuff</a>
+          <a class="dropdown-item" href="#">Things</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="active">
+        <a class="nav-link navbar-right" href="#">Membership<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="navbar-right">
+        <a class="nav-link" href="#">Subscriptions</a>
+      </li>
+    </ul>
+  </div>
 </div>
-</div>
 
-<!-- <div class="container">
-<div id="header">
 
-	<div id="header-left">
-
-		<a class="physics-element" href="https://www.google.com/intl/en/about/">About</a>
-    <a class="physics-element dropdown" href="https://store.google.com/">Membership</a>
-
-	</div>
-
-	<div id="header-right">
-
-		<a class="physics-element" href="https://mail.google.com/mail/?tab=wm">Gmail</a>
-
-		<a class="physics-element" href="https://www.google.com/imghp?hl=en&tab=wi&ei=ljNXUojfAqqCyAHQw4CYAQ&ved=0CAQQqi4oAg">Images</a>
-
-		<a href="https://www.google.com/intl/en/options/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAI0lEQVR42mMoLi7+j4xhgFhxhmFgwH8KAeUGjMbCaCwMCgMA6SkP7lNxogIAAAAASUVORK5CYII=" width="16" height="16" class="physics-element"></a>
-
-		<button id="btnG" class="physics-element" style="height:30px;color:#fff;font-size:13px;font-weight:bold;padding:0 12px 1px 12px;border:1px solid #4285f4;background:-webkit-linear-gradient(top,#4387fd,#4683ea);background:webkit-linear-gradient(top,#4387fd,#4683ea);">Sign in</button>
-
-	</div>
-
-</div>
-</div> -->
-
+<!-- second navbar  -->
 <nav class="navbar navbar-expand" id="other-nav">
   <div class="container-fluid" >
     <div class="navbar-header">
       <a id="nav-brand" routerLink="">BRANDLESS CLONE</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item nav-link"><a routerLink="">Food</a></li>
+      <li class="nav-item nav-link"><a routerLink="">Home</a></li>
       <li class="nav-item nav-link"><a routerLink="about">About</a></li>
-      <li class="nav-item nav-link"><a routerLink="marketplace">Marketplace</a></li>
+      <li class="nav-item nav-link"><a routerLink="marketplace">Food</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="container">
-  <h1>{{title}}</h1>
-  <router-outlet></router-outlet>
-</div>
+<!-- <div class="container"> -->
+
+<router-outlet></router-outlet>
+<!-- </div> -->
 
 
 <!-- <app-background-image></app-background-image> -->
@@ -77,3 +56,29 @@
     <a class="text-muted" routerLink="admin">Admin</a>
   </div>
 </footer>
+
+
+<!-- <div class="container">
+<div id="header">
+
+<div id="header-left">
+
+<a class="physics-element" href="https://www.google.com/intl/en/about/">About</a>
+<a class="physics-element dropdown" href="https://store.google.com/">Membership</a>
+
+</div>
+
+<div id="header-right">
+
+<a class="physics-element" href="https://mail.google.com/mail/?tab=wm">Gmail</a>
+
+<a class="physics-element" href="https://www.google.com/imghp?hl=en&tab=wi&ei=ljNXUojfAqqCyAHQw4CYAQ&ved=0CAQQqi4oAg">Images</a>
+
+<a href="https://www.google.com/intl/en/options/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAI0lEQVR42mMoLi7+j4xhgFhxhmFgwH8KAeUGjMbCaCwMCgMA6SkP7lNxogIAAAAASUVORK5CYII=" width="16" height="16" class="physics-element"></a>
+
+<button id="btnG" class="physics-element" style="height:30px;color:#fff;font-size:13px;font-weight:bold;padding:0 12px 1px 12px;border:1px solid #4285f4;background:-webkit-linear-gradient(top,#4387fd,#4683ea);background:webkit-linear-gradient(top,#4387fd,#4683ea);">Sign in</button>
+
+</div>
+
+</div>
+</div> -->

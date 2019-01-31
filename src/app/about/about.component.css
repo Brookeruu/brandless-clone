@@ -1,14 +1,33 @@
-image {
-  /* display: block;
-  position: fixed; */
+img {
+  width: 100vw;
+  margin-left: 0px;
+  margin-bottom: -400px;
+  margin-top: 0px;
 }
 
-.test  {
-  width: 100%;
-  height: 20vh;
-  background-image: url("https://brandless-production-static.imgix.net/assets/53f18e93a0b4812b6b9bb77ab32b1e67.jpg?auto=format,compress")
+h1 {
+  font-weight: bold;
+  font-size: 60px;
 }
 
-#content {
-  background-color: white;
+
+.card {
+  padding: 100px;
+  border-radius: 20px;
+  border: white;
+  text-align: center;
+  margin: 20px;
+  margin-top: 135px;
+  width: 75%;
+}
+
+.card-text {
+  font-weight: 350;
+  font-size: 25px;
+  letter-spacing: .4px;
+}
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: grey;
 }

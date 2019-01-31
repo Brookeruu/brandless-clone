@@ -1,8 +1,10 @@
-<h2>this item has this id number: {{itemId}}</h2>
-
-
-<div>
+<div class="container">
   <h3>{{(itemToDisplay)?.title}}</h3>
-  <p>{{(itemToDisplay)?.category}}</p>
-  <p>${{(itemToDisplay)?.price}}</p>
+
+  <div>
+
+    <p>Item ID number: {{itemId}}</p>
+    <p>{{(itemToDisplay)?.category}}</p>
+    <p>${{(itemToDisplay)?.price}}</p>
+  </div>
 </div>

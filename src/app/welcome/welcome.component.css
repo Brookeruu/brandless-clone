@@ -1,18 +1,25 @@
-.card {
-  margin-top: -281px;
-  margin-left: 30px;
-  border-radius: 15px;
-  border: none;
-  width: 460px;
-  height: 250px;
+.top-space {
+  margin: 20px;
 }
 
-.card-title {
-  text-transform: uppercase;
-  font-weight: bolder;
+.page {
+  height: 332px;
+  padding: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
 }
 
-button {
-  width: 12.5rem;
-  height: 40px;
+.call-to-action {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 518px;
+  height: 100%;
+  padding: 32px;
+  border-radius: 14px;
+  background-color: #fff;
+  box-sizing: border-box;
 }

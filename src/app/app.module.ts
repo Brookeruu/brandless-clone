@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AuthGuard } from './auth-guard.service';
 import { AuthenticationService } from './authentication.service';
+import { CategoryPipe } from './category.pipe';
 
 
 import { AboutComponent } from './about/about.component';
@@ -44,6 +45,7 @@ export const firebaseConfig = {
     BackgroundImageComponent,
     PublicComponent,
     PrivateComponent,
+    CategoryPipe,
   ],
   imports: [
     BrowserModule,

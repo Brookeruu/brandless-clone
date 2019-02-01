@@ -9,19 +9,44 @@
 
     <h2>Marketplace</h2>
 
-    <div class="grid-container">
+    <!-- sort by category -->
+
+
+<div class="grid-container">
+
+  <div class="container">
+    <select (change)="onChange($event.target.value)">Sort by category:</select>
+    <option value="breakfast">Breakfast</option>
+    <option value="coffee">Coffee</option>
+    <option value="cookies">Cookies</option>
+    <option value="snacks">Snacks</option>
+    <option value="all">View All</option>
+  </div>
+
+  <div class="grid-item" *ngFor="let item of items | category:filterByCategory">
+    <div class="panel-body">
+      <img (click)="goToDetailPage(item)" id="food-item-img" width="200" src="./assets/img/hazelnut.jpg" alt="hazelnut spread">
+      <h4>{{item.title}}</h4>
+      <h5>{{item.category}}</h5>
+      <h5 id="price"> <em>${{item.price}}</em></h5>
+      <div *ngIf="currentRoute !== '/admin'">
+        <button class="btn btn-outline-primary btn-block" type="button" name="button">Add to cart</button>
+      </div>
+    </div>
+
+
+    <!-- <div class="grid-container">
 
       <div class="grid-item" *ngFor="let item of items | async">
         <div class="panel-body">
           <img (click)="goToDetailPage(item)" id="food-item-img" width="200" src="./assets/img/hazelnut.jpg" alt="hazelnut spread">
           <h4>{{item.title}}</h4>
           <h5>{{item.category}}</h5>
-          <!-- <h5> <em>{{item.category}}</em></h5> -->
           <h5 id="price"> <em>${{item.price}}</em></h5>
           <div *ngIf="currentRoute !== '/admin'">
             <button class="btn btn-outline-primary btn-block" type="button" name="button">Add to cart</button>
           </div>
-        </div>
+        </div> -->
 
         <div *ngIf="currentRoute === '/admin'">
           <hr>

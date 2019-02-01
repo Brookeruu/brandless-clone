@@ -15,15 +15,20 @@ export class MarketplaceComponent implements OnInit {
 
   currentRoute: string = this.router.url;
 
+  filterByCategory: string = "breakfast";
+
   constructor(private router: Router, private itemService: ItemService){}
 
   ngOnInit() {
     this.items = this.itemService.getItems();
-
   }
 
   goToDetailPage(clickedItem) {
     this.router.navigate(['items', clickedItem.$key])
   };
+
+  onChange(optionFromMenu) {
+  this.filterByCategory = optionFromMenu;
+}
 
 }

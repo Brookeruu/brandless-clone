@@ -5,6 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent }   from './marketplace/marketplace.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +28,15 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'public',
+    component: PublicComponent
+  },
+  {
+    path: 'private',
+    component: PrivateComponent
   }
+
  ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

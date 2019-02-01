@@ -6,7 +6,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import { AuthGuard } from './auth-guard.service';
+import { AuthenticationService } from './authentication.service';
 
 
 import { AboutComponent } from './about/about.component';
@@ -18,6 +19,9 @@ import { BackgroundImageComponent } from './background-image/background-image.co
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -38,6 +42,8 @@ export const firebaseConfig = {
     AdminComponent,
     EditItemComponent,
     BackgroundImageComponent,
+    PublicComponent,
+    PrivateComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +54,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [AuthGuard, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

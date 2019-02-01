@@ -3,24 +3,30 @@
     <div class="col-4-md">
     <div class="card card-default">
       <div class="card-header">
-        <h4 class="card-title"><span id="admin-red">Admin View: </span><br>Add New Item to Inventory</h4>
+        <h4 class="card-title"><span id="admin-red">Admin View: </span><br><h5>Add New Item to Inventory</h5></h4>
       </div>
       <div class="card-body">
         <div class="card-text">
-          <label>Item Title:</label>
-          <br>
-          <input #newTitle>
+          <label class="col-form-label-sm">Item Title:</label>
+          <input class="col-form-label-sm" #newTitle>
         </div>
 
+        <br>
+
         <div>
-          <label>Item Category:</label>
-          <br>
-          <input #newCategory>
+          <label class="col-form-label-sm">New Item Category:</label>
+          <select #newCategory class="form-control form-control-sm">
+            Select a category:
+            <option #newCategory value="beverage">Beverage</option>
+            <option #newCategory value="snacks">Snacks</option>
+            <option #newCategory value="breakfast">Breakfast</option>
+            <option #newCategory value="cookies">Cookies</option>
+          </select>
         </div>
+<br>
         <div>
-          <label>Item Price:</label>
-          <br>
-          <input #newPrice>
+          <label class="col-form-label-sm">Item Price:</label>
+          <input class="col-form-label-sm" #newPrice>
         </div>
       </div>
       <button class="btn btn-outline-info"(click)="submitForm(newTitle.value, newCategory.value, newPrice.value); newTitle.value=''; newCategory.value=''; newPrice.value=''">Add New Item</button>

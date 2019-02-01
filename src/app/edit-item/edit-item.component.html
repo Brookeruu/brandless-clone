@@ -1,14 +1,16 @@
-
-<h5>Edit Item</h5>
-
-<label class="col-form-label-sm">New Item Title:</label>
+<label class="col-form-label-sm">Edit Item Title:</label>
 <input class="col-form-label-sm" [(ngModel)]="selectedItem.title">
 <br>
 
-<label class="col-form-label-sm">New Item Category:</label>
-<input class="col-form-label-sm" [(ngModel)]="selectedItem.category">
+<label class="col-form-label-sm">Edit Item Category:</label>
+<select class="form-control form-control-sm" [(ngModel)]="selectedItem.category">
+  <option value="Beverage">Beverage</option>
+  <option value="Snacks">Snacks</option>
+  <option value="Breakfast">Breakfast</option>
+  <option value="Cookies">Cookies</option>
+</select>
 <br>
 
 <button  class="btn btn-outline-warning" (click)="beginUpdatingItem(selectedItem)">Update</button>
-<hr>
+
 <button class="btn btn-outline-danger" (click)="beginDeletingItem(selectedItem)">Delete</button>

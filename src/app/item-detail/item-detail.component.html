@@ -1,10 +1,19 @@
-<div class="container">
-  <h3>{{(itemToDisplay)?.title}}</h3>
 
-  <div>
+  <div class="container">
+  <div class="grid-container">
+    <img class="grid-item" src="https://brandless-2.imgix.net/bundle_thumbnails/images/000/000/016/original/data?ixlib=rb-1.1.0&w=1180&h=1180&q=85&auto=format%2Ccompress&s=2ea7e53455b32e628e72e0a9528c24ea" alt="coffee">
 
-    <p>Item ID number: {{itemId}}</p>
-    <p>{{(itemToDisplay)?.category}}</p>
-    <p>${{(itemToDisplay)?.price}}</p>
+    <img class="grid-item" src="https://brandless-2.imgix.net/bundle_thumbnails/images/000/000/029/original/data?ixlib=rb-1.1.0&w=1180&h=1180&q=85&auto=format%2Ccompress&s=7642215cbc3080caa84defa5c13b2a26" alt="chips">
+
+    <img class="grid-item" src="https://brandless-2.imgix.net/bundle_thumbnails/images/000/000/010/original/data?ixlib=rb-1.1.0&w=1180&h=1180&q=85&auto=format%2Ccompress&s=2c4c5f73ec08fb16ad487b86d8eee02a" alt="pancake batter">
   </div>
-</div>
+
+    <h3>{{(itemToDisplay)?.title}}</h3>
+
+    <div>
+
+      <p>Item ID number: {{itemId}}</p>
+      <!-- <p>{{(itemToDisplay)?.category}}</p> -->
+      <p>${{(itemToDisplay)?.price}}</p>
+    </div>
+  </div>

@@ -10,3 +10,14 @@ p {
 .container {
   margin-top: 20px;
 }
+
+.grid-item {
+  width: 33%;
+  height: 33%;
+}
+
+.grid-container {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 70px;
+}

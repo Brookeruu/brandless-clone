@@ -3,6 +3,7 @@ import { Item } from '../item.model';
 import { Router } from '@angular/router';
 import { ItemService } from '../item.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { CategoryPipe } from '../category.pipe';
 
 @Component({
   selector: 'app-marketplace',

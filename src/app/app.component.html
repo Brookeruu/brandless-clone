@@ -4,17 +4,17 @@
   <div class="container-fluid">
 
     <!-- top navbar : dropdown list : not working -->
-    <ul class="nav navbar-nav" id="top-nav">
-      <li class="active">
-        <a class="nav-link navbar-right" href="#">This site is a clone of Brandless! <span class="sr-only">(current)</span></a>
+    <ul class="nav navbar-nav" id="top-nav" style="width: 100%">
+      <li class="active col-md-4">
+        <a class="nav-link navbar-right" href="#">Clone of Brandless! <span class="sr-only">(current)</span></a>
       </li>
-      <li class="navbar-right">
-        <a class="nav-link" href="#">Free shipping sometimes if over $39</a>
+      <li class="navbar-right col-md-4">
+        <a class="nav-link" href="#">Free shipping over $39</a>
       </li>
-      <li class="navbar-right" *ngIf="isLoggedIn" style="color: #f2f2f2">
+      <li class="navbar-right col-md-4" *ngIf="isLoggedIn" style="color: #f2f2f2">
         <a class="nav-link" (click)="logout()">Log Out {{userName}}</a>
       </li>
-      <li class="navbar-right" *ngIf="!isLoggedIn" style="color: #f2f2f2">
+      <li class="navbar-right col-md-4" *ngIf="!isLoggedIn" style="color: #f2f2f2">
         <a class="nav-link" (click)="login()">Log In</a>
       </li>
     </ul>

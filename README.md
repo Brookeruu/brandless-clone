@@ -1,6 +1,6 @@
-# WildlifeConserveClone
+# Brandless Clone
 
-The goal of this project is to recreate an existing site.
+The goal of this project is to recreate an existing site using Angular.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 #### Setup/Installation Requirements

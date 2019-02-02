@@ -1,7 +1,8 @@
 # Brandless Clone
 
-The goal of this project is to recreate an existing site using Angular.
+The goal of this project is to recreate or "clone" an existing site using Angular.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
 
 #### Setup/Installation Requirements
 
@@ -19,14 +20,20 @@ $ npm install
 $ ng build
 ```
 
+You will need to go in the app.component, marketplace.component, public.component, and private.component and change "public" to "private" for Authentication.
+
+
+github: https://github.com/Brookeruu/brandless-clone.git
+firbase: https://brandless-clone.firebaseapp.com/
+
 ## Known Bugs & Future Plans
 
-* This App is not yet complete.
-* Carousel not quite functional, cannot yet switch to next slide.
-* Plan to have working links, that will redirect user to new views.
-* Need to add more CSS, information, and images to homepage.
-* Navbar tabs not yet functional.
-
+* This app has a long way to go. Future plans include:
+  * Getting splash page carousel to work
+  * Buttons on homepage to connect to favorites do not work yet
+  * Improving styling
+  * Adding authorization for admin
+  
 
 ## Support and contact details
 

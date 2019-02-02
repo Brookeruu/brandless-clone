@@ -11,6 +11,7 @@ import { AuthenticationService } from "./authentication.service";
 export class AuthGuard implements CanActivate {
   authService: any;
 
+  // constructor(public router: Router) { }
   constructor(private router: Router) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
@@ -27,6 +28,4 @@ export class AuthGuard implements CanActivate {
       }
     });
   }
-}
-
 }

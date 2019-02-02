@@ -13,11 +13,14 @@ export class AppComponent {
   title = 'Brandless Clone';
 
   user;
-  private isLoggedIn: Boolean;
-  private userName: String;
+  public isLoggedIn: Boolean;
+  public userName: String;
 
+  // private isLoggedIn: Boolean;
+  // private userName: String;
 
-  constructor(public authService: AuthenticationService, private router: Router)  {
+  constructor(public authService: AuthenticationService, public router: Router)  {
+  // constructor(public authService: AuthenticationService, private router: Router)
     this.authService.user.subscribe(user => {
       if (user === null) {
         this.isLoggedIn = false;

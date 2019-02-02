@@ -9,7 +9,8 @@ import * as firebase from "firebase";
 })
 export class PublicComponent{
 
-  private user;
+  public user;
+// private user;
 
   constructor() { }
 

@@ -18,8 +18,8 @@ export class MarketplaceComponent implements OnInit {
 
   filterByCategory: string = "breakfast";
 
-  constructor(private router: Router, private itemService: ItemService){}
-
+  constructor(public router: Router, public itemService: ItemService){}
+  // constructor(private router: Router, private itemService: ItemService){}
   ngOnInit() {
     this.items = this.itemService.getItems();
   }

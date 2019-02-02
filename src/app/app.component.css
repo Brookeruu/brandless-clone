@@ -36,45 +36,9 @@ ul#top-nav {
 ul#bottom-nav {
   margin-right: 100px;
 }
-/*
-#header {
-  color: green;
-}
 
-#header-right {
-  position: absolute;
-  top: 5px;
-  right: 0px;
-
-}
-
-#header-left {
-  position: absolute;
-   top: 5px;
-  left: 20px;
-}
-
-#header a, li {
-
-  color: black;
-  font-size: 13px;
-  margin-right: 15px;
-  text-decoration: none;
-
-}
-
-#header a:hover {
-
+li:hover, a:hover {
+  font-weight: bolder;
   text-decoration: underline;
-
+  color: 	#ccccff;
 }
-
-#header img {
-  vertical-align: middle;
-}
-
-#header button {
-
-  transform: translateX(50px);
-
-} */

@@ -23,11 +23,11 @@ $ ng build
 You will need to go in the app.component, marketplace.component, public.component, and private.component and change "public" to "private" for Authentication.
 
 
-github: https://github.com/Brookeruu/brandless-clone.git
-firbase: https://brandless-clone.firebaseapp.com/
+* github: https://github.com/Brookeruu/brandless-clone.git
+* firebase: https://brandless-clone.firebaseapp.com/
 
 ![](assets/brandless-gif.gif)
-![](assets/brandless-gif-2.gif)
+![](assets/brandless-gif2.gif)
 
 ## Known Bugs & Future Plans
 

@@ -26,9 +26,9 @@ You will need to go in the app.component, marketplace.component, public.componen
 * github: https://github.com/Brookeruu/brandless-clone.git
 * firebase: https://brandless-clone.firebaseapp.com/
 
-![](assets/brandless-gif.gif)
+![](assets/Brandless-gif.gif)
 <br>
-![](assets/brandless-gif2.gif)
+![](assets/brandless-login-gif.gif)
 
 ## Known Bugs & Future Plans
 

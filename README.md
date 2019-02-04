@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * In the command line, clone this repository with
 ```
-$ git clone https://github.com/Brookeruu/wildlife-conservation-clone.git
+$ git clone https://github.com/Brookeruu/brandless-clone.git
 ```
 
 * Navigate into the directory and use command
@@ -26,14 +26,18 @@ You will need to go in the app.component, marketplace.component, public.componen
 github: https://github.com/Brookeruu/brandless-clone.git
 firbase: https://brandless-clone.firebaseapp.com/
 
+![](assets/brandless-gif.gif)
+![](assets/brandless-gif-2.gif)
+
 ## Known Bugs & Future Plans
 
 * This app has a long way to go. Future plans include:
   * Getting splash page carousel to work
-  * Buttons on homepage to connect to favorites do not work yet
+  * Adding individual item image based on category
+  * Use Api to seed database
   * Improving styling
   * Adding authorization for admin
-  
+
 
 ## Support and contact details
 

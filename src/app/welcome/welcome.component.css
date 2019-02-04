@@ -48,6 +48,8 @@ img#spoon-image {
 
 
 #floating-links .grid-item {
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
   height: 40px;
   width: 150px;
   text-transform: uppercase;
@@ -95,3 +97,49 @@ img#spoon-image {
 #test {
   margin-top: 300px;
 }
+
+#carousel-brandless {
+  min-width: 1200px;
+  margin-left: auto;  margin-right: auto
+}
+
+
+/* --------- */
+
+@media only screen and (max-width: 950px) {
+  .call-to-action {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 65%;
+    height: 30%;
+    padding: 12px;
+    border-radius: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    display: none;
+  }
+
+  div > p {
+    display: show;
+  }
+
+  #floating-links < p {
+    display: show;
+  }
+
+  .btn-responsive {
+      padding:2px 4px;
+      font-size:80%;
+      line-height: 1;
+    }
+  }

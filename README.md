@@ -28,7 +28,7 @@ You will need to go in the app.component, marketplace.component, public.componen
 
 ![](assets/Brandless-gif.gif)
 <br>
-![](assets/brandless-login-gif.gif)
+<!-- ![](assets/brandless-login-gif.gif) -->
 
 ## Known Bugs & Future Plans
 
